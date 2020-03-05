@@ -24,7 +24,7 @@ const PokemonCard: FunctionComponent<Props> = ({pokemon, borderColor = '#009688'
   }
   
   const goToPokemon = (id: number) => {
-    history.push(`/pokemon/${id}`)
+    history.push(`/pokemons/${id}`)
   }
   
   return (
