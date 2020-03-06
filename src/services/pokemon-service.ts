@@ -28,7 +28,6 @@ export default class PokemonService {
   }
 
   static deletePokemon(pokemon: Pokemon): Promise<{}> { // prends un objet Pokemon en param et renvoie un objet vide
-    console.log("ok");
     return fetch(`http://localhost:3001/pokemons/${pokemon.id}`, {
       method : 'DELETE',
       headers: { 'Content-Type': 'application/json' }
@@ -38,7 +37,9 @@ export default class PokemonService {
   }
  
   static addPokemon(pokemon: Pokemon): Promise<Pokemon> {
-    return fetch(`http://localhost/3001/pokemons`,{
+    delete pokemon.created;
+    console.log(pokemon);
+    return fetch(`http://localhost:3001/pokemons`,{
       method: 'POST',
       body: JSON.stringify(pokemon),
       headers: { 'Content-Type': 'application/json' }
