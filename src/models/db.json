@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Bulbizarre",
-      "hp": 25,
+      "hp": "30",
       "cp": 5,
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
       "types": [
@@ -122,6 +122,27 @@
       "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/037.png",
       "types": [
         "Feu"
+      ]
+    },
+    {
+      "id": 1583602457552,
+      "hp": 100,
+      "cp": 10,
+      "name": "aze",
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/122.png",
+      "types": [
+        "Normal"
+      ]
+    },
+    {
+      "id": 1583602948406,
+      "hp": 100,
+      "cp": 10,
+      "name": "test",
+      "picture": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/111.png",
+      "types": [
+        "Normal",
+        "Combat"
       ]
     }
   ]

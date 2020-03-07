@@ -72,6 +72,7 @@ export default class PokemonService {
     pokemon.created = new Date(pokemon.created);
   
     if(this.isDev) {
+      delete pokemon.created;
       return fetch(`http://localhost:3001/pokemons`, {
         method: 'POST',
         body: JSON.stringify(pokemon),
