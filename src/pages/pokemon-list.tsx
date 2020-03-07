@@ -4,6 +4,7 @@ import Pokemon from '../models/pokemon';
 import PokemonCard from '../components/pokemon-card';
 import PokemonService from '../services/pokemon-service';
 import PokemonSearch from '../components/pokemon-search';
+import Loader from '../components/loader';
 
 
 const PokemonList: FunctionComponent = () => {
@@ -20,7 +21,7 @@ const PokemonList: FunctionComponent = () => {
         <div className="row">
         <PokemonSearch/>
         {pokemons.map(pokemon => (
-          <PokemonCard key={pokemon.id} pokemon={pokemon}/>
+         <PokemonCard key={pokemon.id} pokemon={pokemon}/> 
         ))}
         </div>
         <Link to="/pokemons/add"className="btn-floating btn-large waves-effect waves-light red z-depth-3" 
